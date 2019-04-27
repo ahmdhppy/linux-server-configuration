@@ -11,7 +11,7 @@ The Linux Server Configuration project involves taking a baseline installation o
 - To connect: ssh -p 2200 -i item_catalog grader@159.65.121.225 
 
 
-###Configurations:
+### Configurations:
 1. Update all currently installed packages.
     ```bash
     #Update list of available packages.
@@ -117,7 +117,7 @@ The Linux Server Configuration project involves taking a baseline installation o
     ```
 
 
-###Install required packages Apache2, mod_wsgi, python, git and PostgreSQL:
+### Install required packages Apache2, mod_wsgi, python, git and PostgreSQL:
 ```bash
 apt install apache2 libapache2-mod-wsgi python-dev postgresql python2.7 python-pip postgresql-server-dev-all git -y
 ```
@@ -133,7 +133,7 @@ apt install apache2 libapache2-mod-wsgi python-dev postgresql python2.7 python-p
     ```
 
 
-###Analyse system LOG files - LogWatch:
+### Analyse system LOG files - LogWatch:
 * Install LogWatch.
     ```bash
     #Install LogWatch 
@@ -143,7 +143,7 @@ apt install apache2 libapache2-mod-wsgi python-dev postgresql python2.7 python-p
     logwatch | less
     ``` 
 
-###Configure postgres:
+### Configure postgres:
 * Switch to default user postgres.
     ```bash
     sudo su - postgres
@@ -169,7 +169,7 @@ apt install apache2 libapache2-mod-wsgi python-dev postgresql python2.7 python-p
     GRANT ALL ON SCHEMA public TO item;
     ```
 
-###Deploy Flask Application:
+### Deploy Flask Application:
 * Log into the remote VM through ssh with the following command:
     ```bash
     ssh -i ~/.ssh/item_catalog grader@159.65.121.225
