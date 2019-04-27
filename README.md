@@ -237,8 +237,6 @@ apt install apache2 libapache2-mod-wsgi python-dev postgresql python2.7 python-p
     sudo apachectl restart
     ```
 
-#Restart apache to launch the app
-
 
 ## Resources Used
 [https://www.codementor.io/abhishake/minimal-apache-configuration-for-deploying-a-flask-app-ubuntu-18-04-phu50a7ft](https://www.codementor.io/abhishake/minimal-apache-configuration-for-deploying-a-flask-app-ubuntu-18-04-phu50a7ft)
